@@ -27,18 +27,6 @@ gulp.task('deploy-img', function () {
 gulp.task('sass-main', function () {
   return gulp.src(['src/scss/*.scss', '!src/scss/_*.*'])
     .pipe(sass().on('error', sass.logError))
-    /**
-     * Nao pode usar o purge pois o portal usa varios módulos prontos da realejo
-     * e portanto precisa ter o bootstrap completo
-     .pipe(
-     purgecss({
-                content: [
-                    'src/!**!/!*.html',
-                    'dist/vendor/!**!/!*.js',
-                    'dist/vendor/!**!/!*.css',
-                ]
-            })
-     )*/
     .pipe(
       purgecss({
         content: [
