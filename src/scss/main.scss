@@ -5,6 +5,23 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
 
+
 .bg-default{
   background-color: $default-rpg;
 }
+
+p{
+  color: red;
+}
+#lblSessao{
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+nav{
+  background: #718888;
+  height: 65px;
+  border-radius: 5px;
+}
+
