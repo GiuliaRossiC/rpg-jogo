@@ -38,3 +38,45 @@ nav{
 .parallaxOverlay p,h1{
   color:  #00256B;
 }
+
+footer {
+  @extend .small;
+  @extend .pt-4;
+  @extend .pt-md-5;
+
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    @extend .text-white;
+    text-shadow: #fff 0 0 0;
+  }
+
+  ul.social {
+    a {
+      @extend .text-white;
+      @extend .text-decoration-none;
+      text-shadow: #fff 0 0 0;
+      margin-right: 15px;
+    }
+  }
+
+  /*para ter a mesma margin do P e ficar certo no mobile*/
+  ul.social, .img-fluid {
+    margin-bottom: 1rem;
+  }
+}
+
+/** Alinha o footer no final da página quando não houver
+conteúdo suficiente para empurrar ele pra baixo
+ */
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+}
