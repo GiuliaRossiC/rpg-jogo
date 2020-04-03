@@ -1,0 +1,64 @@
+/**
+ NAVBAR DO SITE
+ */
+.navbar-default {
+  @extend .navbar-light;
+  background-color: pink;
+  height: 150px;
+  border-top: 10px solid deeppink;
+
+  .navbar-nav .nav-link {
+    color: hotpink;
+    font-weight: bold;
+
+    &:hover {
+      color: deeppink;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav.navbar-right {
+    top: -125px;
+    right: 25px;
+    float: right;
+    position: relative;
+  }
+  .navbar-nav.navbar-right > li {
+    display: table-cell;
+  }
+}
+
+.navbar ul,
+.navbar li,
+.navbar a {
+  letter-spacing: -1px;
+  margin: 3px;
+}
+
+.navbar .navbar-toggle {
+  border: 0px;
+}
+
+.nav-profile-img {
+  width: 25px;
+  border: 1px solid pink;
+}
+
+/**
+ NAV BAR DENTRO DO ADMIN
+ */
+section {
+  .navbar {
+    .navbar-toggler {
+      @extend .btn-outline-secondary
+    }
+  }
+}

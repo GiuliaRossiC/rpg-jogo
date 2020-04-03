@@ -4,19 +4,29 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
-
+@import "parallax";
+@import "navbar";
 
 .bg-default{
   background-color: $default-rpg;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: black;
 }
 
-p{
-  color: red;
+.bg-blue{
+  @extend .bg-default;
+  background-color: #00256B;
 }
+
+.bg-dark{
+  @extend .bg-default;
+  background-color: black;
+}
+
 #lblSessao{
   font-weight: bold;
   margin-right: 10px;
-  margin-top: 6px;
 }
 
 nav{
@@ -25,3 +35,6 @@ nav{
   border-radius: 5px;
 }
 
+.parallaxOverlay p,h1{
+  color:  #00256B;
+}
