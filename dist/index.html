@@ -14,38 +14,227 @@
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
-<body>
+<body class="d-flex flex-column">
+
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">
-            <img src="../dist/img/rpgLogo.jpg" width="50" height="45" >
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">O Jogo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Novidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Suporte</a>
-                </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/rpg-logo.jpg" width="50" height="45">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">O Jogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novidades.html">Novidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="suporte.html">Suporte</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav  navbar-right">
+                    <li class="nav-item">
+                        <a id="lblSessao" class="nav-link" href="iniciar-sessao.html">Iniciar Sessão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-secondary" class="nav-link" href="jogue-agora.html">Jogue Agora</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <label id="lblSessao">Iniciar Sessão</label><button type="button" class="btn btn-secondary">Jogue Agora</button>
-
     </nav>
 </header>
+
 <main>
+    <section>
+        <div class="parallax">
+            <div class="parallaxOverlay">
+                <div class="container justify-content-end col-12 text-center" style="margin-top: 20%">
+                    <h1>
+                        RPG  <br>DE<br> ESTUDO
+                    </h1>
+                    <p class="mt-3 col">
+                        No seu rpg você poderá
+                        estudar para suas matérias da
+                        escola e se divertir!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="bg-default">
-        <p class="text-center">
-            Teste começando aqui
-        </p>
+        <div class="container text-center">
+            <h2>
+                AVANCE DE LEVEL NA SUA CLASSE!
+            </h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type
+                specimen book. It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.
+            </p>
+            <p>
+                Escolha sua classe de acordo com o que você precisa estudar!
+                <br>
+            </p>
+            <div class="row text-center justify-content-center">
+                <div class="col-12 col-sm-2">
+                    <img src="img/arrow.png">
+                    <br>
+                    Portugues
+                </div>
+                <div class="col-12 col-sm-2">
+                    <img src="img/helmet.png">
+                    <br>
+                    Matemática
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-blue">
+        <div class="text-center">
+            <h2>
+                Comece sua aventura agora!
+            </h2>
+            <a href="jogue-agora.html" class="btn btn-primary">JOGUE DE GRAÇA</a>
+        </div>
+    </section>
+    <section class="bg-default">
+        <div class="text-center">
+            <h2>
+                Novidades!
+            </h2>
+            <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+    <div class="card mb-4 shadow-sm">
+        <a href="artigo-noticia.html">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                 role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>
+        </a>
+        <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#" style="text-decoration: none; color: black">
+                    <i class="fas fa-heart" style="color: red"></i> 34</a>
+                <small class="text-muted">9 mins</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="col-md-4">
+    <div class="card mb-4 shadow-sm">
+        <a href="artigo-noticia.html">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                 role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>
+        </a>
+        <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#" style="text-decoration: none; color: black">
+                    <i class="fas fa-heart" style="color: red"></i> 34</a>
+                <small class="text-muted">9 mins</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="col-md-4">
+    <div class="card mb-4 shadow-sm">
+        <a href="artigo-noticia.html">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
+                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
+                 role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+            </svg>
+        </a>
+        <div class="card-body">
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#" style="text-decoration: none; color: black">
+                    <i class="fas fa-heart" style="color: red"></i> 34</a>
+                <small class="text-muted">9 mins</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+        </div>
     </section>
 </main>
+<footer class="pt-4 pt-md-5 mt-auto small text-white" style="background-color: #718888">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2" src="img/rpg-logo.jpg" alt="" style="width:100px">
+            </div>
+            <div class="col-12 col-md">
+                <h5>RPG Club</h5>
+                <p>
+
+                    <a class="text-decoration-none" href="project-list.html">clica aqui.</a>
+                </p>
+            </div>
+            <div class="col-12 col-md">
+                <h5>Acompanhe também</h5>
+                <ul class="list-unstyled list-group list-group-horizontal">
+                    <li><a class="fab fa-instagram fa-2x" href="#"></a></li>
+                    <li><a class="fab fa-facebook fa-2x" href="#"></a></li>
+                    <li><a class="fab fa-youtube fa-2x" href="#"></a></li>
+                    <li><a class="fab fa-twitter fa-2x" href="#"></a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md">
+                <h5>Fale com a gente</h5>
+                <p>Precisa falar com a gente? envie sua mensagem
+                    <a href="#" class="text-decoration-none">nesse link</a>.
+                </p>
+            </div>
+            <div class="col-12 col-md">
+                <h5>Sobre nós</h5>
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <p class="text-white-50 text-center">
+            <a href="#" class="text-decoration-none">Termos e condições</a>
+            &bull;
+            <a href="#" class="text-decoration-none">Políticas de privacidade</a>
+            &bull;
+            <a href="#" class="text-decoration-none">Contato</a>
+        </p>
+        <p class="text-white-50 text-center">&copy; 2020 RPGZADA. - CNPJ
+            00.000.000/0000-00  - São Paulo/SP - Brasil</p>
+    </div>
+</footer>
+
 </body>
 </html>
