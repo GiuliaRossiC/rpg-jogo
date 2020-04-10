@@ -15,12 +15,42 @@
   position: relative;
 }
 
+.parallaxSobre {
+  background-image: url('../img/banner_parallax_sobre.jpg');
+
+  /* Set a specific height */
+  min-height: 800px;
+  @media (max-width: 480px) {
+    height: 250px;
+  }
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .parallaxOverlay {
   position: absolute;
   height: 100%;
   width: 40%;
   top: 0;
   right: 0;
+  background-color: rgba(191, 207, 226, 0.5);
+  color: white;
+  @media (max-width: 585px) {
+    width: 100%;
+  }
+}
+
+.parallaxOverlaySobre {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  right: 0px;
   background-color: rgba(191, 207, 226, 0.5);
   color: white;
   @media (max-width: 585px) {

@@ -1,0 +1,115 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- build:css css/main.css -->
+    <link type="text/css" href="scss/main.scss">
+    <!-- endbuild -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body class="d-flex flex-column">
+
+@@include('./_header.html')
+
+<main>
+
+    <section>
+        <div class="parallaxSobre">
+            <div class="parallaxOverlaySobre">
+                <div class="container justify-content-end col-12 text-center" style="margin-top: 14.5%">
+                    <h1>
+                        RPG  <br>DE<br> ESTUDO
+                    </h1>
+                    <p class="mt-3 col">
+                        No seu rpg você poderá
+                        estudar para suas matérias da
+                        escola e se divertir!
+                    </p>
+                    <a href="jogue-agora.html" class="btn btn-success">JOGUE DE GRAÇA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-default">
+        <div class="container text-center">
+            <h2>
+                SEJAM BEM-VINDOS AO RPG DE ESTUDO
+            </h2>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Animi aperiam asperiores autem deleniti deserunt earum, fugit illo ipsam nisi
+                perspiciatis repudiandae similique soluta voluptates? At minus odio porro quo reprehenderit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ducimus eaque et ex,
+                fuga harum in, inventore ipsum laboriosam quisquam quo quod temporibus vitae?
+                Debitis illo ipsa nesciunt placeat vitae.
+            </p>
+            <br>
+            <div class="row text-center justify-content-center">
+                <div class="col-12 col-sm-2">
+                    <img src="img/study1.png">
+                    <br><br>
+                    <h5>
+                        Estude
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <img src="img/study2.png">
+                    <br><br>
+                    <h5>
+                        Boas Notas
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <div class="col-12 col-sm-2">
+                    <img src="img/study3.png">
+                    <br><br>
+                    <h5>
+                        Vença
+                    </h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-green">
+        <div class="text-center">
+            <h2>
+                Comece sua aventura agora!
+            </h2>
+            <a href="jogue-agora.html" class="btn btn-primary">JOGUE DE GRAÇA</a>
+        </div>
+    </section>
+
+    <section class="bg-default">
+        <div class="text-center">
+            <h2>
+                Viu as nossas últimas novidades?
+            </h2>
+            <br>
+            @@include('./_novidades.html')
+        </div>
+    </section>
+
+</main>
+@@include('./_footer.html')
+</body>
+</html>

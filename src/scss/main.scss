@@ -37,6 +37,11 @@ body, html {
   background-color: black;
 }
 
+.bg-green{
+  @extend .bg-default;
+  background-color: #1e7e34;
+}
+
 #lblSessao{
   font-weight: bold;
   margin-right: 10px;
@@ -45,7 +50,6 @@ body, html {
 nav{
   background: $bg-nav;
   height: 65px;
-  border-radius: 5px;
 }
 
 .parallaxOverlay p,h1{
@@ -92,4 +96,13 @@ main {
 }
 footer {
   flex-shrink: 0;
+}
+
+.maplocation {
+  background: #718888;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 47px;
 }
