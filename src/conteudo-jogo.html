@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- build:css css/main.css -->
+    <link type="text/css" href="scss/main.scss">
+    <!-- endbuild -->
+</head>
+<body class="d-flex flex-column">
+
+@@include('./_header.html')
+
+<main>
+    <section class="bg-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-perfil-list"
+                           data-toggle="list"
+                           href="#list-perfil" role="tab" aria-controls="perfil">Perfil</a>
+                        <a class="list-group-item list-group-item-action" id="list-classes-list" data-toggle="list"
+                           href="#list-classes" role="tab" aria-controls="classes">Classes</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                           href="#list-messages" role="tab" aria-controls="messages">Desempenho</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8">
+                    <div class="tab-content mt-5" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-perfil" role="tabpanel"
+                             aria-labelledby="list-perfil-list">
+                            @@include('./profile.html')
+                        </div>
+                        <div class="tab-pane fade" id="list-classes" role="tabpanel"
+                             aria-labelledby="list-classes-list">
+                            <h2 class="text-center mb-5">Escolha uma classe para iniciar suas missões!</h2>
+                            <div class="row text-center justify-content-center">
+                                <div class="col-12 col-sm-4 mb-3">
+                                    <a href="missoes-portugues.html"> <img src="img/arrow.png">
+                                    <br />Português
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 mb-3">
+                                    <a href="missoes-matematica.html"> <img src="img/helmet.png">
+                                    <br/>Matemática
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                             aria-labelledby="list-messages-list">
+                            ...
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                             aria-labelledby="list-settings-list">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+@@include('./_footer.html')
+</body>
+<script>
+    $(function () {
+        $('#myList a:last-child').tab('show')
+    })
+</script>
+</html>

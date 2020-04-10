@@ -7,6 +7,19 @@
 @import "parallax";
 @import "navbar";
 
+body, html {
+  height: 100%
+}
+
+.tab-pane a{
+  color: black;
+  text-decoration: none;
+}
+
+.list-group-item.active{
+  background-color: $bg-nav;
+}
+
 .bg-default{
   background-color: $default-rpg;
   padding-top: 40px;
@@ -16,7 +29,7 @@
 
 .bg-blue{
   @extend .bg-default;
-  background-color: #00256B;
+  background-color: $bg-blue;
 }
 
 .bg-dark{
@@ -30,13 +43,13 @@
 }
 
 nav{
-  background: #718888;
+  background: $bg-nav;
   height: 65px;
   border-radius: 5px;
 }
 
 .parallaxOverlay p,h1{
-  color:  #00256B;
+  color:  $bg-parallax;
 }
 
 footer {

@@ -1,5 +1,8 @@
 $fa-font-path: "../vendor/font-awesome-5.12.0/webfonts" !default;
 $default-rpg: white;
+$bg-blue: #00256B;
+$bg-parallax: #00256B;
+$bg-nav:  #718888;
 
 /** BOOTSTRAP OVERRIDE **/
-$primary: $default-rpg !default;
+$primary: $bg-parallax !default;
