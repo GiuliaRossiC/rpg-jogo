@@ -10,47 +10,50 @@
 
 <script>
     (function () {
-        document.getElementById("formCadastro").addEventListener("submit", function (event) {
-            if (!cadastroClick()) {
-                event.preventDefault();
-            } else {
-                alert("nome: " + document.getElementById("InputUser").value + "\n"
-                    + "email: " + document.getElementById("InputEmailCadastro").value + "\n"
-                    + "senha: " + document.getElementById("InputSenhaCadastro").value + "\n"
-                    + "data de nascimento: " + document.getElementById("inputNascimento").value)
-            }
-        });
-    })();
-
-    (function () {
-        document.getElementById("FormLogin").addEventListener("submit", function (event) {
-            if (!loginClick()) {
-                event.preventDefault();
-            } else {
-                alert("email: " + document.getElementById("loginEmail").value + "\n"
-                    + "senha: " + document.getElementById("loginSenha").value + "\n")
-            }
-        });
-    })();
+        var form = document.getElementById("formCadastro");
+        if (form) {
+            form.addEventListener("submit", function (event) {
+                if (!cadastroClick()) {
+                    event.preventDefault();
+                } else {
+                    alert("nome: " + document.getElementById("InputUser").value + "\n"
+                        + "email: " + document.getElementById("InputEmailCadastro").value + "\n"
+                        + "senha: " + document.getElementById("InputSenhaCadastro").value + "\n"
+                        + "data de nascimento: " + document.getElementById("inputNascimento").value)
+                }
+            });
+        }
+        form = document.getElementById("formLogin");
+        if (form) {
+            document.getElementById("formLogin").addEventListener("submit", function (event) {
+                if (!loginClick()) {
+                    event.preventDefault();
+                } else {
+                    alert("email: " + document.getElementById("loginEmail").value + "\n"
+                        + "senha: " + document.getElementById("loginSenha").value + "\n")
+                }
+            });
+        }}
+    )();
 
     function loginClick(event) {
-        $('#invalidEmailLogin').hide();
-        $('#invalidSenhaLogin').hide();
-
         var email = document.getElementById("loginEmail").value;
         var senha = document.getElementById("loginSenha").value;
         var valid = true;
 
-        if (email == "") {
-            $('#invalidEmailLogin').show();
+        if(email === ""){
+            var x = document.getElementById("invalidEmailLogin");
+            x.style.display = 'block';
             valid = false;
         }
-        if (senha == "") {
-            $('#invalidSenhaLogin').show();
+        if(senha === ""){
+            var x = document.getElementById("invalidSenhaLogin");
+            x.style.display = 'block';
             valid = false;
         }
         return valid;
     }
+
     function cadastroClick(event) {
         $('#userInvalido').hide();
         $('#emailInvalido').hide();
@@ -66,31 +69,31 @@
         var checkCadastro = document.getElementById("aceitaCadastro").value;
         var eValido = true;
 
-        if (nome == "") {
+        if (nome === "") {
             $('#userInvalido').show();
             eValido = false;
         }
-        if (email == "") {
+        if (email === "") {
             $('#emailInvalido').show();
             eValido = false;
         }
-        if (senha == "") {
+        if (senha === "") {
             $('#senhaInvalido').show();
             eValido = false;
         }
-        if (confirmaSenha == "") {
+        if (confirmaSenha === "") {
             $('#confirmaSenha').show();
             eValido = false;
         }
-        if (nasci == "") {
+        if (nasci === "") {
             $('#dataInvalido').show();
             eValido = false;
         }
-        if (document.getElementById("aceitaCadastro").checked == false) {
+        if (document.getElementById("aceitaCadastro").checked === false) {
             $('#ckeckInvalido').show();
             eValido = false;
         }
-        if (confirmaSenha != senha) {
+        if (confirmaSenha !== senha) {
             alert("As senhas digitadas não conferem!!");
         }
         return eValido;
