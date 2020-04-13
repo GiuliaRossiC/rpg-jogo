@@ -7,3 +7,92 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+<script>
+    (function () {
+        document.getElementById("formCadastro").addEventListener("submit", function (event) {
+            if (!cadastroClick()) {
+                event.preventDefault();
+            } else {
+                alert("nome: " + document.getElementById("InputUser").value + "\n"
+                    + "email: " + document.getElementById("InputEmailCadastro").value + "\n"
+                    + "senha: " + document.getElementById("InputSenhaCadastro").value + "\n"
+                    + "data de nascimento: " + document.getElementById("inputNascimento").value)
+            }
+        });
+    })();
+
+    (function () {
+        document.getElementById("FormLogin").addEventListener("submit", function (event) {
+            if (!loginClick()) {
+                event.preventDefault();
+            } else {
+                alert("email: " + document.getElementById("loginEmail").value + "\n"
+                    + "senha: " + document.getElementById("loginSenha").value + "\n")
+            }
+        });
+    })();
+
+    function loginClick(event) {
+        $('#invalidEmailLogin').hide();
+        $('#invalidSenhaLogin').hide();
+
+        var email = document.getElementById("loginEmail").value;
+        var senha = document.getElementById("loginSenha").value;
+        var valid = true;
+
+        if (email == "") {
+            $('#invalidEmailLogin').show();
+            valid = false;
+        }
+        if (senha == "") {
+            $('#invalidSenhaLogin').show();
+            valid = false;
+        }
+        return valid;
+    }
+    function cadastroClick(event) {
+        $('#userInvalido').hide();
+        $('#emailInvalido').hide();
+        $('#senhaInvalido').hide();
+        $('#confirmaSenha').hide();
+        $('#dataInvalido').hide();
+        $('#ckeckInvalido').hide();
+        var nome = document.getElementById("InputUser").value;
+        var email = document.getElementById("InputEmailCadastro").value;
+        var senha = document.getElementById("InputSenhaCadastro").value;
+        var confirmaSenha = document.getElementById("inputConfirmaSenha").value;
+        var nasci = document.getElementById("inputNascimento").value;
+        var checkCadastro = document.getElementById("aceitaCadastro").value;
+        var eValido = true;
+
+        if (nome == "") {
+            $('#userInvalido').show();
+            eValido = false;
+        }
+        if (email == "") {
+            $('#emailInvalido').show();
+            eValido = false;
+        }
+        if (senha == "") {
+            $('#senhaInvalido').show();
+            eValido = false;
+        }
+        if (confirmaSenha == "") {
+            $('#confirmaSenha').show();
+            eValido = false;
+        }
+        if (nasci == "") {
+            $('#dataInvalido').show();
+            eValido = false;
+        }
+        if (document.getElementById("aceitaCadastro").checked == false) {
+            $('#ckeckInvalido').show();
+            eValido = false;
+        }
+        if (confirmaSenha != senha) {
+            alert("As senhas digitadas não conferem!!");
+        }
+        return eValido;
+    }
+</script>
