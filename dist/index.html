@@ -1,32 +1,23 @@
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body class="d-flex flex-column">
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-sm" style="color: #000b1f">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="img/rpg-logo.jpg" width="50" height="45">
             </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
@@ -35,18 +26,18 @@
                         <a class="nav-link" href="sobre.html">O Jogo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="novidades.html">Novidades</a>
+                        <a class="nav-link" href="sobre_nos.html">Nossa Empresa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="suporte.html">Suporte</a>
+                        <a class="nav-link" href="mini-currilo.html">Nossa equipe</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav  navbar-right">
                     <li class="nav-item">
-                        <a id="lblSessao" class="nav-link" href="iniciar-sessao.html">Iniciar Sessão</a>
+                        <a id="lblSessao" class="nav-link" href="cadastro.html">Cadastre-se agora!</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-secondary" class="nav-link" href="jogue-agora.html">Jogue Agora</a>
+                        <a class="btn btn-secondary" class="nav-link" href="iniciar-sessao.html">Iniciar Sessão</a>
                     </li>
                 </ul>
             </div>
@@ -92,12 +83,12 @@
             </p>
             <div class="row text-center justify-content-center">
                 <div class="col-12 col-sm-2">
-                    <img src="img/arrow.png">
+                    <img src="img/sword.png">
                     <br>
-                    Portugues
+                    Português
                 </div>
                 <div class="col-12 col-sm-2">
-                    <img src="img/helmet.png">
+                    <img src="img/arrow.png">
                     <br>
                     Matemática
                 </div>
@@ -109,7 +100,7 @@
             <h2>
                 Comece sua aventura agora!
             </h2>
-            <a href="jogue-agora.html" class="btn btn-primary">JOGUE DE GRAÇA</a>
+            <a href="iniciar-sessao.html" class="btn btn-primary">JOGUE DE GRAÇA</a>
         </div>
     </section>
     <section class="bg-default">
@@ -117,24 +108,20 @@
             <h2>
                 Novidades!
             </h2>
+            <br>
             <section>
     <div class="container">
         <div class="row">
             <div class="col-md-4">
     <div class="card mb-4 shadow-sm">
         <a href="artigo-noticia.html">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                 role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-            </svg>
+            <img src="img/assassinclass.jpeg" width="100%" height="225">
         </a>
         <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.</p>
+            <p class="card-text">A classe <u>assassino</u> foi adicionada!</p>
             <div class="d-flex justify-content-between align-items-center">
                 <a href="#" style="text-decoration: none; color: black">
-                    <i class="fas fa-heart" style="color: red"></i> 34</a>
+                    <i class="fa fa-heart" style="color: red"></i> 34</a>
                 <small class="text-muted">9 mins</small>
             </div>
         </div>
@@ -144,18 +131,13 @@
             <div class="col-md-4">
     <div class="card mb-4 shadow-sm">
         <a href="artigo-noticia.html">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                 role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-            </svg>
+            <img src="img/assassinclass.jpeg" width="100%" height="225">
         </a>
         <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.</p>
+            <p class="card-text">A classe <u>assassino</u> foi adicionada!</p>
             <div class="d-flex justify-content-between align-items-center">
                 <a href="#" style="text-decoration: none; color: black">
-                    <i class="fas fa-heart" style="color: red"></i> 34</a>
+                    <i class="fa fa-heart" style="color: red"></i> 34</a>
                 <small class="text-muted">9 mins</small>
             </div>
         </div>
@@ -165,18 +147,13 @@
             <div class="col-md-4">
     <div class="card mb-4 shadow-sm">
         <a href="artigo-noticia.html">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                 xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false"
-                 role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#55595c"></rect>
-            </svg>
+            <img src="img/assassinclass.jpeg" width="100%" height="225">
         </a>
         <div class="card-body">
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.</p>
+            <p class="card-text">A classe <u>assassino</u> foi adicionada!</p>
             <div class="d-flex justify-content-between align-items-center">
                 <a href="#" style="text-decoration: none; color: black">
-                    <i class="fas fa-heart" style="color: red"></i> 34</a>
+                    <i class="fa fa-heart" style="color: red"></i> 34</a>
                 <small class="text-muted">9 mins</small>
             </div>
         </div>
@@ -198,43 +175,171 @@
             <div class="col-12 col-md">
                 <h5>RPG Club</h5>
                 <p>
-
-                    <a class="text-decoration-none" href="project-list.html">clica aqui.</a>
+                    Para saber mais sobre nossa empresa?
+                    <br>
+                    <a class="text-decoration-none" href="sobre.html"><i>Clica aqui!</i></a>
                 </p>
-            </div>
-            <div class="col-12 col-md">
-                <h5>Acompanhe também</h5>
-                <ul class="list-unstyled list-group list-group-horizontal">
-                    <li><a class="fab fa-instagram fa-2x" href="#"></a></li>
-                    <li><a class="fab fa-facebook fa-2x" href="#"></a></li>
-                    <li><a class="fab fa-youtube fa-2x" href="#"></a></li>
-                    <li><a class="fab fa-twitter fa-2x" href="#"></a></li>
-                </ul>
             </div>
             <div class="col-12 col-md">
                 <h5>Fale com a gente</h5>
-                <p>Precisa falar com a gente? envie sua mensagem
-                    <a href="#" class="text-decoration-none">nesse link</a>.
+                <p>Precisa falar com a gente? envie sua mensagem para <i>rpg@gmail.com</i>
                 </p>
             </div>
             <div class="col-12 col-md">
-                <h5>Sobre nós</h5>
+                <h5>Sobre nossa equipe</h5>
                 <p>
-
+                    Quer saber mais sobre a equipe idealizadora desse projeto?
+                    <br>
+                    <a href="mini-currilo.html" class="text-decoration-none"><i>Clica aqui!</i></a>
                 </p>
             </div>
         </div>
         <p class="text-white-50 text-center">
-            <a href="#" class="text-decoration-none">Termos e condições</a>
+            <a href="termos.html" class="text-decoration-none">Termos e condições</a>
             &bull;
-            <a href="#" class="text-decoration-none">Políticas de privacidade</a>
-            &bull;
-            <a href="#" class="text-decoration-none">Contato</a>
+            <a href="politicas.html" class="text-decoration-none">Políticas de privacidade</a>
+
         </p>
         <p class="text-white-50 text-center">&copy; 2020 RPGZADA. - CNPJ
             00.000.000/0000-00  - São Paulo/SP - Brasil</p>
     </div>
 </footer>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+<script>
+    (function () {
+        var form = document.getElementById("formCadastro");
+        if (form) {
+            form.addEventListener("submit", function (event) {
+                if (!cadastroClick()) {
+                    event.preventDefault();
+                } else {
+                    alert("nome: " + document.getElementById("InputUser").value + "\n"
+                        + "email: " + document.getElementById("InputEmailCadastro").value + "\n"
+                        + "senha: " + document.getElementById("InputSenhaCadastro").value + "\n"
+                        + "data de nascimento: " + document.getElementById("inputNascimento").value)
+                }
+            });
+        }
+        form = document.getElementById("formLogin");
+        if (form) {
+            document.getElementById("formLogin").addEventListener("submit", function (event) {
+                if (!loginClick()) {
+                    event.preventDefault();
+                } else {
+                    alert("email: " + document.getElementById("loginEmail").value + "\n"
+                        + "senha: " + document.getElementById("loginSenha").value + "\n")
+                }
+            });
+        }}
+    )();
+
+    function loginClick(event) {
+        var email = document.getElementById("loginEmail").value;
+        var senha = document.getElementById("loginSenha").value;
+        var valid = true;
+
+        if(email === ""){
+            var x = document.getElementById("invalidEmailLogin");
+            x.style.display = 'block';
+            valid = false;
+        }
+        if(senha === ""){
+            var x = document.getElementById("invalidSenhaLogin");
+            x.style.display = 'block';
+            valid = false;
+        }
+        return valid;
+    }
+
+    function cadastroClick(event) {
+        $('#userInvalido').hide();
+        $('#emailInvalido').hide();
+        $('#senhaInvalido').hide();
+        $('#confirmaSenha').hide();
+        $('#dataInvalido').hide();
+        $('#sexoInvalido').hide();
+        $('#civilInvalido').hide();
+        $('#residencialInvalido').hide();
+        $('#celInvalido').hide();
+        $('#endInvalido').hide();
+        $('#textInvalido').hide();
+        $('#ckeckInvalido').hide();
+        var nome = document.getElementById("InputUser").value;
+        var email = document.getElementById("InputEmailCadastro").value;
+        var senha = document.getElementById("InputSenhaCadastro").value;
+        var confirmaSenha = document.getElementById("inputConfirmaSenha").value;
+        var nasci = document.getElementById("inputNascimento").value;
+        var estadoCivil = document.getElementById("inputEstadoCivil").value;
+        var telResidencial = document.getElementById("inputTelefoneRes").value;
+        var telCel = document.getElementById("inputTelefoneCelular").value;
+        var end = document.getElementById("inputEndereco").value;
+        var eValido = true;
+
+        if (nome === "") {
+            $('#userInvalido').show();
+            eValido = false;
+        }
+        if (email === "") {
+            $('#emailInvalido').show();
+            eValido = false;
+        }
+        if (senha === "") {
+            $('#senhaInvalido').show();
+            eValido = false;
+        }
+        if (confirmaSenha === "") {
+            $('#confirmaSenha').show();
+            eValido = false;
+        }
+        if (nasci === "") {
+            $('#dataInvalido').show();
+            eValido = false;
+        }
+
+        if((document.getElementById("sexoM").checked || document.getElementById("sexoF").checked) === false){
+            $('#sexoInvalido').show();
+            eValido = false;
+        }
+
+        if(document.getElementById("inputEstadoCivil").querySelector("option:checked").text  === ""){
+            $('#civilInvalido').show();
+            eValido = false;
+        }
+
+        if(telResidencial === ""){
+            $('#residencialInvalido').show();
+            eValido = false;
+        }
+
+        if(telCel === ""){
+            $('#celInvalido').show();
+            eValido = false;
+        }
+
+        if(end === ""){
+            $('#endInvalido').show();
+            eValido = false;
+        }
+
+        if (document.getElementById("aceitaCadastro").checked === false) {
+            $('#ckeckInvalido').show();
+            eValido = false;
+        }
+        if (confirmaSenha !== senha) {
+            alert("As senhas digitadas não conferem!!");
+        }
+        return eValido;
+    }
+</script>
 </body>
 </html>
