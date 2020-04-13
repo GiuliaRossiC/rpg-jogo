@@ -1,14 +1,14 @@
-.team-member, .team-member .team-img {
+.equipe-member, .equipe-member .equipe-img {
   position: relative;
 }
-.team-member {
+.equipe-member {
   overflow: hidden;
 }
-.team-member, .team-member .team-img {
+.equipe-member, .equipe-member .equipe-img {
   position: relative;
 }
 
-.team-hover {
+.equipe-hover {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,13 +21,13 @@
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.team-member:hover .team-hover .desk {
+.equipe-member:hover .equipe-hover .texto-hover {
   top: 35%;
 }
-.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover {
+.equipe-member:hover .equipe-hover, .equipe-member:hover .equipe-hover .texto-hover, .equipe-member:hover .equipe-hover {
   opacity: 1;
 }
-.team-hover .desk {
+.equipe-hover .texto-hover {
   position: absolute;
   top: 0%;
   width: 100%;
@@ -39,7 +39,7 @@
   transition: all 0.3s 0.2s;
   padding: 0 20px;
 }
-.team-title {
+.equipe-titulo {
   position: static;
   padding: 20px 0;
   display: inline-block;
