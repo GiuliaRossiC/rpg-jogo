@@ -60,13 +60,22 @@
         $('#senhaInvalido').hide();
         $('#confirmaSenha').hide();
         $('#dataInvalido').hide();
+        $('#sexoInvalido').hide();
+        $('#civilInvalido').hide();
+        $('#residencialInvalido').hide();
+        $('#celInvalido').hide();
+        $('#endInvalido').hide();
+        $('#textInvalido').hide();
         $('#ckeckInvalido').hide();
         var nome = document.getElementById("InputUser").value;
         var email = document.getElementById("InputEmailCadastro").value;
         var senha = document.getElementById("InputSenhaCadastro").value;
         var confirmaSenha = document.getElementById("inputConfirmaSenha").value;
         var nasci = document.getElementById("inputNascimento").value;
-        var checkCadastro = document.getElementById("aceitaCadastro").value;
+        var estadoCivil = document.getElementById("inputEstadoCivil").value;
+        var telResidencial = document.getElementById("inputTelefoneRes").value;
+        var telCel = document.getElementById("inputTelefoneCelular").value;
+        var end = document.getElementById("inputEndereco").value;
         var eValido = true;
 
         if (nome === "") {
@@ -89,6 +98,32 @@
             $('#dataInvalido').show();
             eValido = false;
         }
+
+        if((document.getElementById("sexoM").checked || document.getElementById("sexoF").checked) === false){
+            $('#sexoInvalido').show();
+            eValido = false;
+        }
+
+        if(document.getElementById("inputEstadoCivil").querySelector("option:checked").text  === ""){
+            $('#civilInvalido').show();
+            eValido = false;
+        }
+
+        if(telResidencial === ""){
+            $('#residencialInvalido').show();
+            eValido = false;
+        }
+
+        if(telCel === ""){
+            $('#celInvalido').show();
+            eValido = false;
+        }
+
+        if(end === ""){
+            $('#endInvalido').show();
+            eValido = false;
+        }
+
         if (document.getElementById("aceitaCadastro").checked === false) {
             $('#ckeckInvalido').show();
             eValido = false;

@@ -14,12 +14,12 @@
 <main>
     <section class="bg-default">
         <div class="container">
-            <div class="login-card card my-5 shadow-sm">
+            <div class="cadastro-card card my-5 shadow-sm">
                 <div class="card-body">
                     <div class="card-text">
                         <form action="index.html" id="formCadastro">
                             <h1 class="text-center">Cadastre-se agora!</h1>
-                            <hr />
+                            <hr/>
                             <div class="form-group">
                                 <label>Usuário:</label>
                                 <input type="text" class="form-control" id="InputUser">
@@ -32,17 +32,20 @@
                                 <div id="emailInvalido" style="display: none; color: darkred;"><b>Digite um email.</b>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label>Senha:</label>
-                                <input type="password" class="form-control" id="InputSenhaCadastro">
-                                <div id="senhaInvalido" style="display: none; color: darkred;"><b>Digite uma senha.</b>
+                            <div class="row">
+                                <div class="col-12 col-sm-4 form-group">
+                                    <label>Senha:</label>
+                                    <input type="password" class="form-control" id="InputSenhaCadastro">
+                                    <div id="senhaInvalido" style="display: none; color: darkred;"><b>Digite uma
+                                        senha.</b>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Confirmar Senha:</label>
-                                <input type="password" class="form-control" id="inputConfirmaSenha">
-                                <div id="confirmaSenha" style="display: none; color: darkred;"><b>As senhas não
-                                    conferem.</b>
+                                <div class="col-12 col-sm-4 form-group">
+                                    <label>Confirmar Senha:</label>
+                                    <input type="password" class="form-control" id="inputConfirmaSenha">
+                                    <div id="confirmaSenha" style="display: none; color: darkred;"><b>As senhas não
+                                        conferem.</b>
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -52,6 +55,66 @@
                                     nascimento.</b>
                                 </div>
                             </div>
+                            <div class="form-group form row">
+                                <div class="col-12 col-sm-6">
+                                    <label>Informe seu sexo:</label><br/>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                               id="sexoF"
+                                               value="option1">
+                                        <label class="form-check-label" for="sexoF">Feminino</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                               id="sexoM"
+                                               value="option2">
+                                        <label class="form-check-label" for="sexoM">Masculino</label>
+                                    </div>
+                                    <div id="sexoInvalido" style="display: none; color: darkred;"><b>Escolha seu
+                                        sexo</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Estado Civil:</label>
+                                <select class="form-control" id="inputEstadoCivil">
+                                    <option></option>
+                                    <option>Solteiro(a)</option>
+                                    <option>Casado(a)</option>
+                                    <option>Divorciado(a)</option>
+                                    <option>Viúvo(a)</option>
+                                    <option>Separado Judiciamente</option>
+                                </select>
+                                <div id="civilInvalido" style="display: none; color: darkred;"><b>Digite seu
+                                    estado
+                                    civil.</b>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-sm-6">
+                                    <label>Telefone Residencial</label>
+                                    <input type="number" class="form-control" id="inputTelefoneRes">
+                                    <div id="residencialInvalido" style="display: none; color: darkred;"><b>Digite
+                                        seu
+                                        telefone residencial.</b>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 col-sm-6">
+                                    <label>Telefone Celular</label>
+                                    <input type="number" class="form-control" id="inputTelefoneCelular">
+                                    <div id="celInvalido" style="display: none; color: darkred;"><b>Digite seu
+                                        telefone
+                                        celular.</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Endereço</label>
+                                <input type="text" class="form-control" id="inputEndereco">
+                                <div id="endInvalido" style="display: none; color: darkred;"><b>Digite seu
+                                    endereço.</b>
+                                </div>
+                            </div>
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="aceitaCadastro">
                                 <label class="form-check-label" for="aceitaCadastro">Aceito os termos</label>
@@ -59,7 +122,8 @@
                                     termos.</b>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-block btn-primary mt-2" id="btnCadastrar">Cadastrar</button>
+                            <button type="submit" class="btn btn-block btn-primary mt-2" id="btnCadastrar">Cadastrar
+                            </button>
                         </form>
                     </div>
                 </div>
