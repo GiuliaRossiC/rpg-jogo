@@ -12,25 +12,36 @@
 @@include('./_header.html')
 
 <main>
-    <section>
-        <form action="index.html" id="formLogin" style="margin:15px">
-            <h4>Iniciar Sessão</h4>
-            <div class="form-group">
-                <label>Email:</label>
-                <input type="email" class="form-control" id="loginEmail" placeholder="Digite aqui seu email">
-                <div id="invalidEmailLogin" style="display: none; color: darkred; font-weight: bold">Por favor,
-                    digite o e-mail.
+    <section class="bg-default">
+        <div class="container">
+            <div class="login-card card my-5 shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Iniciar Sessão</h4>
+                    <div class="card-text">
+                        <form action="index.html" id="formLogin" style="margin:15px">
+                            <div class="form-group">
+                                <label>Email:</label>
+                                <input type="email" class="form-control" id="loginEmail"
+                                       placeholder="Digite aqui seu email">
+                                <div id="invalidEmailLogin" style="display: none; color: darkred; font-weight: bold">Por
+                                    favor,
+                                    digite o e-mail.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Senha:</label>
+                                <input type="password" class="form-control" id="loginSenha" placeholder="Senha">
+                                <div id="invalidSenhaLogin" style="display: none; color: darkred; font-weight: bold">Por
+                                    favor,
+                                    digite a senha.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-block btn-primary" id="btnLogin">Login</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label>Senha:</label>
-                <input type="password" class="form-control" id="loginSenha" placeholder="Senha">
-                <div id="invalidSenhaLogin" style="display: none; color: darkred; font-weight: bold">Por favor,
-                    digite a senha.
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary" id="btnLogin">Login</button>
-        </form>
+        </div>
     </section>
 </main>
 
