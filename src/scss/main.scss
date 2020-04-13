@@ -31,6 +31,11 @@ body, html {
 .bg-blue{
   @extend .bg-default;
   background-color: $bg-blue;
+
+    .btn-primary{
+      background-color: $bg-nav;
+      border-color: $bg-nav;
+    }
 }
 
 .bg-dark{
