@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- build:css css/main.css -->
+    <link type="text/css" href="scss/main.scss">
+    <!-- endbuild -->
+</head>
+<body class="d-flex flex-column">
+@@include('./_header.html')
+
+<section class="bg-default" id="noticia">
+    <div class="container mt-4">
+        <div class="media">
+            <div class="media-body">
+                <h1 class="mt-0 mb-1">Adicionamos a matéria portugues na classe assassino!</h1>
+                <h3 class="text-black-50">publicado 13 de Abril de 2020, 7:06 p.m.</h3>
+                Agora você poderá acessar matérias de língua portuguesa através da classe assassino!
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras neque nibh, sodales ut erat vel, sodales
+                gravida mauris. Proin tempor sem at viverra tincidunt. Duis vel justo nulla. Vestibulum venenatis
+                vestibulum metus, in ultricies ligula fringilla non. Quisque sollicitudin ligula ut lacinia dictum.
+                Nulla eu nisl faucibus, pulvinar ex eget, lacinia sem. Nam sed tristique ligula, quis aliquet enim.
+                Pellentesque quis nunc vitae sem elementum lobortis. Proin tortor urna, faucibus mollis lacinia vel,
+                suscipit ut velit. Mauris vitae nibh vel turpis scelerisque mollis id ut enim.
+
+                Suspendisse convallis felis quis convallis viverra. Maecenas ut magna vel est pharetra venenatis. Nullam
+                lobortis tempor orci, eu egestas leo fringilla nec. Integer id aliquam risus, sit amet ultrices felis.
+                Nullam posuere, quam eget tincidunt vulputate, risus dui ullamcorper felis, ac auctor diam urna ac
+                lectus. Curabitur molestie justo tortor, sit amet aliquet risus eleifend quis. Nulla eget suscipit
+                dolor, ac sollicitudin elit. Etiam vehicula, tortor nec ultrices imperdiet, eros justo congue lorem,
+                eget ullamcorper quam ante in augue. In ultrices nunc ac ante consectetur viverra. Morbi suscipit
+                tincidunt dolor, et eleifend ipsum ornare et. Fusce pellentesque sit amet lorem sed vestibulum. Praesent
+                laoreet orci arcu, porta sagittis libero fringilla at.
+            </div>
+            <img src="img/assassinclass.jpeg" height="300px" width="500px" class="ml-3" alt="...">
+        </div>
+    </div>
+</section>
+<section id="novidadesAtleta">
+    <div class="container bycfont mt-5">
+        Novidades selecionadas para você
+        @@include('./_novidades.html')
+    </div>
+</section>
+@@include('./_footer.html')
+@@include('./_scripts.html')
+</body>
+</html>
