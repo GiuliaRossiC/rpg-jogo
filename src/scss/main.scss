@@ -22,6 +22,11 @@ body, html {
   }
 }
 
+.btn-gold{
+  background-color: $gold;
+  border: $gold;
+}
+
 .cadastro-card{
   width: 100%;
   max-width: 600px;
