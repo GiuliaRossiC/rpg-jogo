@@ -1,33 +1,8 @@
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- build:css css/main.css -->
-    <link type="text/css" href="scss/main.scss">
-    <!-- endbuild -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-</head>
-<body class="d-flex flex-column">
-
-@@include('./_header.html')
-
-<main>
-
-
     <section>
-        <TABLE cellspacing="0" width="800">
-            <TR>
-                <TD width="700" bgcolor=#e0e0e0>
-                    <div class="container" align="center">
+        <table cellspacing="0" width="800">
+            <tr>
+                <td bgcolor=#e0e0e0>
+                    <div align="center">
                         <div class="p-3 mb-2 text-white">
                             <img src="img/maguinho.gif"
                                  alt="user" width="100">
@@ -36,12 +11,12 @@
                             <div style="color:black; font-size:20px">pamela123</div>
                         </div>
                     </div>
-                </TD>
+                </td>
 
-                <TD width="1000" bgcolor=#7185b4>
-                    <div class="container mb-5">
-                        <h4>Informações <a href="https://facebook.com" target="_blank"><img
-                                src="C:\Users\Silva\Pictures\RPG\pincel.png" width="10">
+                <td bgcolor=#7185b4>
+                    <div class="mt-5 mb-5">
+                        <h4>Informações <a href="edicao-profile.html"><img
+                                src="img/pincel.png" width="10">
                         </a></h4>
                         <hr/>
                         <div>
@@ -50,6 +25,7 @@
                                 <p>pamela@gmail.com</p>
                                 <h3>Sexo</h3>
                                 <p>feminino</p>
+                                <h3>Estado Civil</h3>
                                 <p>Solteira</p>
                                 <h3>Endereço</h3>
                                 <p>Rua Joaquim Soares 312</p>
@@ -61,15 +37,11 @@
                                 <h3>Telefone</h3>
                                 <p>(11)96854-3587</p>
                                 <p>(11)3854-3587</p>
-                                <h3>User</h3>
-                                <p>pamela123</p>
                             </div>
                         </div>
                         <br>
-
-                        <div>
-                            <br>
-                            <h4>Personagens </h4>
+                            <div id="personagem">
+                            <h4 class="text-center">Personagens</h4>
                             <hr/>
                             <h3 class="text-center">Arqueiro</h3>
                             <p>Progresso</p>
@@ -80,7 +52,7 @@
                             </div>
                             <div>
                                 <br>
-                                <h3 class="text-center">Mago </h3>
+                                <h3 class="text-center">Mago</h3>
                                 <p>Progresso</p>
                                 <div class="progress">
                                     <div class="progress-bar" role="progressbar" style="width: 75%"
@@ -88,14 +60,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </br>
                     </div>
-                </TD>
-            </TR>
-        </TABLE>
+                </td>
+            </tr>
+        </table>
     </section>
-
-</main>
-@@include('./_footer.html')
-</body>
-</html>

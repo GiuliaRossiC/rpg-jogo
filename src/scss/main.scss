@@ -7,6 +7,7 @@
 @import "parallax";
 @import "navbar";
 @import "mini-currilo";
+@import "table";
 
 body, html {
   height: 100%
@@ -22,7 +23,8 @@ body, html {
   }
 }
 
-.videoclasse{
+
+.videoclasse {
   position: relative;
   background-color: black;
   height: 75vh;
@@ -31,7 +33,7 @@ body, html {
   overflow: hidden;
 }
 
-.videoclasse video{
+.videoclasse video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,7 +48,7 @@ body, html {
   transform: translateX(-50%) translateY(-50%);
 }
 
-.videoclasse .container{
+.videoclasse .container {
   position: relative;
   z-index: 2;
 }
@@ -71,70 +73,70 @@ body, html {
   }
 }
 
-.btn-gold{
+.btn-gold {
   background-color: $gold;
   border: $gold;
 }
 
-.cadastro-card{
+.cadastro-card {
   width: 100%;
   max-width: 600px;
   margin: auto;
 }
 
-.login-card{
+.login-card {
   width: 100%;
   max-width: 420px;
   margin: auto;
 }
 
-.tab-pane a{
+.tab-pane a {
   color: black;
   text-decoration: none;
 }
 
-.list-group-item.active{
+.list-group-item.active {
   background-color: $bg-nav;
 }
 
-.bg-default{
+.bg-default {
   background-color: $default-rpg;
   padding-top: 40px;
   padding-bottom: 40px;
   color: black;
 }
 
-.bg-blue{
+.bg-blue {
   @extend .bg-default;
   background-color: $bg-blue;
 
-    .btn-primary{
-      background-color: $bg-nav;
-      border-color: $bg-nav;
-    }
+  .btn-primary {
+    background-color: $bg-nav;
+    border-color: $bg-nav;
+  }
 }
 
-.bg-dark{
+.bg-dark {
   @extend .bg-default;
   background-color: black;
 }
 
-.bg-green{
+.bg-green {
   @extend .bg-default;
   background-color: #1e7e34;
 }
 
-#lblSessao{
+#lblSessao {
   font-weight: bold;
   margin-right: 10px;
 }
 
-nav{
+nav {
   background: $bg-nav;
 }
 
-.parallaxOverlay p,h1{
-  color:  $bg-parallax;
+.parallaxOverlay p, h1 {
+  color: $bg-parallax;
 }
 
 footer {
@@ -172,9 +174,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 main {
   flex: 1 0 auto;
 }
+
 footer {
   flex-shrink: 0;
 }
