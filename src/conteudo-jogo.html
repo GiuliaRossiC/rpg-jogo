@@ -20,28 +20,29 @@
                            data-toggle="list"
                            href="#list-perfil" role="tab" aria-controls="perfil">Perfil</a>
                         <a class="list-group-item list-group-item-action" id="list-classes-list" data-toggle="list"
-                           href="#list-classes" role="tab" aria-controls="classes">Classes</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                           href="#list-classes" role="tab" aria-controls="classes">Personagens</a>
+                       <!-- <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
                            href="#list-messages" role="tab" aria-controls="messages">Desempenho</a>
+                           -->
                     </div>
                 </div>
                 <div class="col-12 col-sm-8">
                     <div class="tab-content mt-5" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-perfil" role="tabpanel"
                              aria-labelledby="list-perfil-list">
-                            @@include('./profile.html')
+                            @@include('./_profile.html')
                         </div>
                         <div class="tab-pane fade" id="list-classes" role="tabpanel"
                              aria-labelledby="list-classes-list">
-                            <h2 class="text-center mb-5">Escolha uma classe para iniciar suas missões!</h2>
+                            <h2 class="text-center mb-5">Escolha uma personagem para iniciar suas missões!</h2>
                             <div class="row text-center justify-content-center">
                                 <div class="col-12 col-sm-4 mb-3">
-                                    <a href="missoes-portugues.html"> <img src="img/arrow.png">
+                                    <a href="missoes-portugues.html"> <img src="img/sword.png">
                                     <br />Português
                                     </a>
                                 </div>
                                 <div class="col-12 col-sm-4 mb-3">
-                                    <a href="missoes-matematica.html"> <img src="img/helmet.png">
+                                    <a href="missoes-matematica.html"> <img src="img/arrow.png">
                                     <br/>Matemática
                                     </a>
                                 </div>
@@ -62,6 +63,7 @@
     </section>
 </main>
 @@include('./_footer.html')
+@@include('./_scripts.html')
 </body>
 <script>
     $(function () {
