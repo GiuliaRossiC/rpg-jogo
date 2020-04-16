@@ -19,14 +19,14 @@
                 } else {
                     event.preventDefault();
                     const infoCadastro = "Dados corretos! <br> Dados Informados: <br><br>"
-                        + "usuário:" + document.getElementById("InputUser").value + "<br>"
+                        + "usuário: " + document.getElementById("InputUser").value + "<br>"
                         + "email: " + document.getElementById("InputEmailCadastro").value + "<br>"
                         + "senha: " + document.getElementById("InputSenhaCadastro").value + "<br>"
                         + "data de nascimento: " + document.getElementById("inputNascimento").value + "<br>"
                         + "sexo: " + document.getElementById("inputNascimento").value + "<br>"
                         + "estado civil: " + document.getElementById("inputEstadoCivil").value + "<br>"
                         + "telefone residencial: " + document.getElementById("inputTelefoneRes").value + "<br>"
-                        + "telefone celular " + document.getElementById("inputTelefoneCelular").value + "<br>"
+                        + "telefone celular: " + document.getElementById("inputTelefoneCelular").value + "<br>"
                         + "endereço: " + document.getElementById("inputEndereco").value;
 
                     document.getElementById("dumpCadastro").innerHTML = infoCadastro;
@@ -43,7 +43,7 @@
                 event.preventDefault();
             } else {
                 event.preventDefault();
-                const infoLogin = "Dados corretos! <br> Dados informados: <br><br> email:" +
+                const infoLogin = "Dados corretos! <br> Dados informados: <br><br> email: " +
                     document.getElementById("loginEmail").value +
                     "<br> senha: " + document.getElementById("loginSenha").value;
 
