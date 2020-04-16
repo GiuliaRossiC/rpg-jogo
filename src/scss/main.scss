@@ -151,10 +151,11 @@ footer {
 }
 
 .maplocation {
-  background: #718888;
+  background: $bg-blue;
 
   display: flex;
   justify-content: center;
 
   padding-top: 47px;
+  padding-bottom: 47px;
 }
