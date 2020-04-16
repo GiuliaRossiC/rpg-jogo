@@ -9,35 +9,54 @@
         crossorigin="anonymous"></script>
 
 <script>
+    let formCadastro, formLogin;
     (function () {
-            var form = document.getElementById("formCadastro");
-            if (form) {
-                form.addEventListener("submit", function (event) {
-                    if (!cadastroClick()) {
-                        event.preventDefault();
-                    } else {
-                        alert("nome: " + document.getElementById("InputUser").value + "\n"
-                            + "email: " + document.getElementById("InputEmailCadastro").value + "\n"
-                            + "senha: " + document.getElementById("InputSenhaCadastro").value + "\n"
-                            + "data de nascimento: " + document.getElementById("inputNascimento").value)
-                    }
-                });
-            }
-            form = document.getElementById("formLogin");
-            if (form) {
-                document.getElementById("formLogin").addEventListener("submit", function (event) {
-                    if (!loginClick()) {
-                        event.preventDefault();
-                    } else {
-                        var infos = ("email: " + document.getElementById("loginEmail").value + "\n"
-                            + "senha: " + document.getElementById("loginSenha").value + "\n");
-                        //usando esse ao inves de inner.html
-                        $('#dumpLogin').append(infos)
-                    }
-                });
-            }
+        formCadastro = document.getElementById("formCadastro");
+        if (formCadastro) {
+            formCadastro.addEventListener("submit", function (event) {
+                if (!cadastroClick()) {
+                    event.preventDefault();
+                } else {
+                    event.preventDefault();
+                    const infoCadastro = "Dados corretos! <br> Dados Informados: <br><br>"
+                        + "usuário:" + document.getElementById("InputUser").value + "<br>"
+                        + "email: " + document.getElementById("InputEmailCadastro").value + "<br>"
+                        + "senha: " + document.getElementById("InputSenhaCadastro").value + "<br>"
+                        + "data de nascimento: " + document.getElementById("inputNascimento").value + "<br>"
+                        + "sexo: " + document.getElementById("inputNascimento").value + "<br>"
+                        + "estado civil: " + document.getElementById("inputEstadoCivil").value + "<br>"
+                        + "telefone residencial: " + document.getElementById("inputTelefoneRes").value + "<br>"
+                        + "telefone celular " + document.getElementById("inputTelefoneCelular").value + "<br>"
+                        + "endereço: " + document.getElementById("inputEndereco").value;
+
+                    document.getElementById("dumpCadastro").innerHTML = infoCadastro;
+                    setTimeout(function () {
+                        document.location = formCadastro.action;
+                    }, 10000);
         }
-    )();
+    });
+    }
+    formLogin = document.getElementById("formLogin");
+    if (formLogin) {
+        formLogin.addEventListener("submit", function (event) {
+            if (!loginClick()) {
+                event.preventDefault();
+            } else {
+                event.preventDefault();
+                const infoLogin = "Dados corretos! <br> Dados informados: <br><br> email:" +
+                    document.getElementById("loginEmail").value +
+                    "<br> senha: " + document.getElementById("loginSenha").value;
+
+                document.getElementById("dumpLogin").innerHTML = infoLogin;
+                setTimeout(function () {
+                    document.location = formLogin.action;
+                }, 3000);
+            }
+        });
+    }
+    }
+    )
+    ();
 
     function loginClick(event) {
         var email = document.getElementById("loginEmail").value;
