@@ -60,11 +60,30 @@ body, html {
   background-color: $bg-nav;
 }
 
+.bg-nav{
+  background-color: $bg-nav;
+}
+
 .bg-default {
   background-color: $default-rpg;
   padding-top: 40px;
   padding-bottom: 40px;
   color: black;
+}
+
+.bgComImagem{
+  @extend .bg-default;
+  color: black;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .bg-blue {
