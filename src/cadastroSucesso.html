@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>Cadastrado com Sucesso</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- build:css css/main.css -->
+    <link type="text/css" href="scss/main.scss">
+    <!-- endbuild -->
+
+    <!--TODOS OS SCRIPTS ESTÃO DENTRO DA PAGINA HTML _SCRIPTS.HTML, SENDO IMPORTADOS COM SASS!!!!!-->
+</head>
+
+<body class="d-flex flex-column">
+
+@@include('./_header.html')
+
+<main>
+    <div>
+        <h4 class="text-center" id="dumpCadastro"></h4>
+        <div class="container">
+            <div class="my-5">
+                <div>
+                    <div class="text-center">
+                        <h1>Cadastro finalizado com sucesso!</h1>
+                        <h5>Dados informados em seu cadastro:</h5>
+                    </div>
+                    <hr>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label>Usuário:</label>
+                            <div id="usuario" class=""></div>
+                        </div>
+                        <div class="form-group col-12 col-sm-4">
+                            <label>Email:</label>
+                            <div id="email"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-sm-4">
+                            <label>Senha:</label>
+                            <div id="senha" class=""></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <label>Data Nascimento:</label>
+                            <div id="dataNascimento" class=""></div>
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <label>Sexo:</label>
+                            <div id="sexo"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Estado Civil:</label>
+                    <div id="estadoCivil"></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-12 col-sm-6">
+                        <label>Telefone Residencial</label>
+                        <div id="telefoneResidencial"></div>
+                    </div>
+                    <div class="form-group col-12 col-sm-6">
+                        <label>Telefone Celular</label>
+                        <div id="telefoneCelular"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Endereço</label>
+                    <div id="endereco"></div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a class="btn btn-primary" href="iniciar-sessao.html">Clique aqui para acessar sua conta!</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById("usuario").innerHTML = urlParams.get('usuario');
+        document.getElementById("email").innerHTML = urlParams.get('email');
+        document.getElementById("senha").innerHTML = urlParams.get('senha');
+        document.getElementById("dataNascimento").innerHTML = urlParams.get('dataNascimento');
+        document.getElementById("sexo").innerHTML = urlParams.get('sexo');
+        document.getElementById("estadoCivil").innerHTML = urlParams.get('estadoCivil');
+        document.getElementById("telefoneResidencial").innerHTML = urlParams.get('telefoneResidencial');
+        document.getElementById("telefoneCelular").innerHTML = urlParams.get('telefoneCelular');
+        document.getElementById("endereco").innerHTML = urlParams.get('endereco');
+    </script>
+</main>
+</body>
+@@include('./_footer.html')
+@@include('./_scripts.html')
+<!--TODOS OS SCRIPTS ESTÃO DENTRO DA PAGINA HTML _SCRIPTS.HTML, SENDO IMPORTADOS COM SASS!!!!!-->
+</html>

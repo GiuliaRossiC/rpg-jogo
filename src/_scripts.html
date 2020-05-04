@@ -16,8 +16,7 @@
             formCadastro.addEventListener("submit", function (event) {
                 if (!cadastroClick()) {
                     event.preventDefault();
-                } else {
-                    event.preventDefault();
+                } /*else {
                     const infoCadastro = "Dados corretos! <br> Dados Informados: <br><br>"
                         + "usuário: " + document.getElementById("InputUser").value + "<br>"
                         + "email: " + document.getElementById("InputEmailCadastro").value + "<br>"
@@ -31,9 +30,9 @@
 
                     document.getElementById("dumpCadastro").innerHTML = infoCadastro;
                     setTimeout(function () {
-                        document.location = formCadastro.action;
+                       // document.location = formCadastro.action;
                     }, 10000);
-        }
+        }*/
     });
     }
     formLogin = document.getElementById("formLogin");
@@ -41,7 +40,7 @@
         formLogin.addEventListener("submit", function (event) {
             if (!loginClick()) {
                 event.preventDefault();
-            } else {
+            } /*else {
                 event.preventDefault();
                 const infoLogin = "Dados corretos! <br> Dados informados: <br><br> email: " +
                     document.getElementById("loginEmail").value +
@@ -51,7 +50,7 @@
                 setTimeout(function () {
                     document.location = formLogin.action;
                 }, 3000);
-            }
+            }*/
         });
     }
     }
@@ -79,6 +78,7 @@
     function cadastroClick(event) {
         $('#userInvalido').hide();
         $('#emailInvalido').hide();
+        $('#confirmaEmailInvalido').hide();
         $('#senhaInvalido').hide();
         $('#confirmaSenha').hide();
         $('#dataInvalido').hide();
@@ -87,10 +87,10 @@
         $('#residencialInvalido').hide();
         $('#celInvalido').hide();
         $('#endInvalido').hide();
-        $('#textInvalido').hide();
         $('#ckeckInvalido').hide();
         var nome = document.getElementById("InputUser").value;
         var email = document.getElementById("InputEmailCadastro").value;
+        var confirmaEmail = document.getElementById("InputConfirmaEmail").value;
         var senha = document.getElementById("InputSenhaCadastro").value;
         var confirmaSenha = document.getElementById("inputConfirmaSenha").value;
         var nasci = document.getElementById("inputNascimento").value;
@@ -106,6 +106,10 @@
         }
         if (email === "") {
             $('#emailInvalido').show();
+            eValido = false;
+        }
+        if(confirmaEmail === ""){
+            $('#confirmaEmailInvalido').show();
             eValido = false;
         }
         if (senha === "") {
@@ -151,7 +155,12 @@
             eValido = false;
         }
         if (confirmaSenha !== senha) {
-            alert("As senhas digitadas não conferem!!");
+            $('#confirmaSenha').show();
+            eValido = false;
+        }
+        if (confirmaEmail !== email) {
+            $('#confirmaEmailInvalido').show();
+            eValido = false;
         }
         return eValido;
     }
